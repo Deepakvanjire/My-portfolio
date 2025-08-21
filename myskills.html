@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafc;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 40px;
+    }
+
+    p.subtitle {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .skill-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      text-align: left;
+    }
+
+    .skill-card h3 {
+      margin: 10px 0 8px;
+    }
+
+    .skill-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .progress {
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+      height: 8px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: #2563eb; /* blue */
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    .proficiency {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+    #Home{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16" id="Home">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></a>
+  
+  <h1>My Skills</h1>
+  <p class="subtitle">A comprehensive toolkit for data analysis and business intelligence</p>
+
+  <div class="skills-container">
+    <!-- Excel -->
+    <div class="skill-card">
+      <h3>📊 Excel</h3>
+      <p>Advanced Excel functions, pivot tables, macros, and data modeling</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 25%;"></div>
+      </div>
+      <div class="proficiency">Proficiency: 25%</div>
+    </div>
+
+    <!-- Power BI -->
+    <div class="skill-card">
+      <h3>📈 Power BI</h3>
+      <p>Interactive dashboards, DAX formulas, and business intelligence reports</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 20%;"></div>
+      </div>
+      <div class="proficiency">Proficiency: 20%</div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="skill-card">
+      <h3>🧠 Machine Learning</h3>
+      <p>Predictive modeling, classification, regression, and deep learning</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 15%;"></div>
+      </div>
+      <div class="proficiency">Proficiency: 15%</div>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-card">
+      <h3>💻 Python</h3>
+      <p>Pandas, NumPy, Scikit-learn, Matplotlib, and data analysis libraries</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 30%;"></div>
+      </div>
+      <div class="proficiency">Proficiency: 30%</div>
+    </div>
+
+    <!-- SQL -->
+    <div class="skill-card">
+      <h3>🗄️ SQL</h3>
+      <p>Complex queries, database design, stored procedures, and optimization</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 28%;"></div>
+      </div>
+      <div class="proficiency">Proficiency: 28%</div>
+    </div>
+  </div>
+
+</body>
+</html>

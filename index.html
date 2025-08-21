@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Vanjire | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/myphoto copy.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9fbff;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: transparent;
+        }
+
+        nav h2 {
+            color: #2d85f0;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a.active {
+            color: #2d85f0;
+            border-bottom: 2px solid #2d85f0;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 60px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h4 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #777;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .hero-text h1 span {
+            color: #2d85f0;
+        }
+
+        .hero-text p {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .btn-primary {
+            background-color: #2d85f0;
+            color: white;
+        }
+
+        .btn-outline {
+            border: 2px solid #2d85f0;
+            color: #2d85f0;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 25px;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #2d85f0;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #1d5bbf;
+        }
+
+        /* Profile Image Glow + Animation */
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            background-color: #d9e9ff;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 50px rgba(45, 133, 240, 0.5);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2></h2>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="myskills.html" >Skills</a></li>
+            <li><a href="myprojects.html"   >Projects</a></li>
+            <li><a href="contactform.html">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h4>WELCOME TO MY PORTFOLIO</h4>
+            <h1>Hi, I'm <span>Deepak Vanjire</span></h1>
+            <p>Aspiring Data Analyst | Building in SQL, POWER BI, PYTHON, EXCEL | AI & ML Enthusiast | Eager to Learn and Build Impactful Solutions</p>
+            
+            <div class="buttons">
+                <a href="#" class="btn-primary">Get In Touch</a>
+                <a href="#" class="btn-outline">View My Work</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/deepak-vanjire-0a619626b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Deepakvanjire" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="profile-img" style="background-image: url('myphoto copy.jpg'); background-size: cover; background-position: center;">
+            <!-- Profile Image -->
+        </div>
+    </section>
+
+</body>
+</html>
+ 

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafc;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+       
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 40px;
+    }
+
+    p.subtitle {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 15px 20px;
+      flex-grow: 1;
+    }
+
+    .project-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .project-content p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #3b82f6;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    .project-footer {
+      padding: 0 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 1px solid #2563eb;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .github-link {
+      margin: 40px 0;
+    }
+    #Home{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+   <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16" id="Home">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></a>
+  <h1>My Projects</h1>
+  <p class="subtitle">Showcasing real-world data analysis projects that deliver business value</p>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="salesanalysisdashboard.jpg" alt="Sales Dashboard">
+      <div class="project-content">
+        <h3>Sales Dashboard Analytics</h3>
+        <p>Comprehensive Power BI dashboard analyzing sales performance, customer segments, and revenue trends.</p>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="ChurnPrediction.jpg" alt="Customer Churn">
+      <div class="project-content">
+        <h3>Customer Churn Prediction</h3>
+        <p>Machine learning model to predict customer churn using Python and scikit-learn. Achieved 89% accuracy.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="inventorymanagement.jpg" alt="Inventory System">
+      <div class="project-content">
+        <h3>Inventory Management System</h3>
+        <p>SQL-based inventory tracking with automated reporting. Optimized warehouse operations and reduced stockouts.</p>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Data Modeling</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <img src="MarketResearchAnalysis.jpg" alt="Market Research">
+      <div class="project-content">
+        <h3>Market Research Analysis</h3>
+        <p>In-depth market analysis using statistical methods and data visualization. Improved insights by 25%.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Statistical Analysis</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card">
+      <img src="financialperformancetrackingdashboard.jpg" alt="Financial Tracker">
+      <div class="project-content">
+        <h3>Financial Performance Tracker</h3>
+        <p>Real-time financial dashboard tracking KPIs, budget variance, and forecasting with automated alerts.</p>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Financial Modeling</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card">
+      <img src="supplychainoptimization1.jpg" alt="Supply Chain">
+      <div class="project-content">
+        <h3>Supply Chain Optimization</h3>
+        <p>Data-driven optimization of supply chain processes using analytics. Reduced operational costs by 20%.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Optimization</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="btn">View</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GitHub Link -->
+  <div class="github-link">
+    <a href="https://github.com/Deepakvanjire" class="btn">📂 View All Projects on GitHub</a>
+  </div>
+
+</body>
+</html>
